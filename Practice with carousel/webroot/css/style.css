@@ -1,0 +1,12 @@
+/*.carouselImage img {
+	width: 500px;
+	height: 100px;
+}*/
+
+h3 {
+	font-size: 26px;
+	font-weight: bold;
+	color: #ff0000;
+	text-transform: capitalize;
+	text-align: center;
+}
