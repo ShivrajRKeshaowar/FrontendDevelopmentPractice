@@ -1,0 +1,806 @@
+/*
+Created by Shivraj Rajendra Keshaowar on 30-10-2017.
+All the contents are used for practice purpose only.And all the respective owners hold their own copyrights for the contents.
+*/
+
+/***********************************************************Reset css********************************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Custom styling starts from here */
+
+body {
+	/*background-color: #555;*/
+	font-family: berkshire swash;
+}
+
+
+.social {
+	position: fixed;
+	top: 100px;
+	right: 10px;
+	text-transform: capitalize;
+}
+
+.social a {
+	display: block;
+	text-decoration: none;
+	color: #26C281;
+	background-color: #000;
+	padding: 15px;
+	/*border-left: 5px solid #DB0A5B;*/
+	/*border-bottom: 3px solid #000;*/ /*To stop the disco effect*/
+}
+
+.social a:hover {
+	color: #FABE58;
+	background-color: #fff; 
+	border-bottom: 3px solid #DB0A5B;
+}
+
+
+/*****************************************
+**************** Wrapper *****************
+*****************************************/
+.wrapper {
+	width: 1000px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+/*****************************************
+**************** Header ******************
+*****************************************/
+.header {
+	padding: 15px;	
+	/*border: 1px solid black;*/
+	border-bottom: 5px dashed black;
+	/*margin-bottom: 15px;*/
+	background-color: #ccc;
+}
+
+/* Header elements */
+
+/* logo */
+.logo {
+	float: left;
+	background-color: cyan;
+	border: 1px solid #696;
+	padding: 15px 0;
+	text-align: center; width: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 -20px 20px 50px;
+	-moz-box-shadow: #666 -20px 20px 50px;
+	box-shadow: #666 -20px 20px 50px;
+	background: #34EFED;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#34EFED), to(#F94D4D));
+	background: -webkit-linear-gradient(#34EFED, #F94D4D);
+	background: -moz-linear-gradient(#34EFED, #F94D4D);
+	background: -ms-linear-gradient(#34EFED, #F94D4D);
+	background: -o-linear-gradient(#34EFED, #F94D4D);
+	background: linear-gradient(#34EFED, #F94D4D);
+	cursor: pointer;
+}
+
+.logo:hover {
+	background-color: cyan;
+	border: 1px solid #696;
+	padding: 15px 0;
+	text-align: center; width: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 -20px 20px 50px;
+	-moz-box-shadow: #666 -20px 20px 50px;
+	box-shadow: #666 -20px 20px 50px;
+	background: #F94D4D;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F94D4D), to(#34EFED));
+	background: -webkit-linear-gradient(#F94D4D, #34EFED);
+	background: -moz-linear-gradient(#F94D4D, #34EFED);
+	background: -ms-linear-gradient(#F94D4D, #34EFED);
+	background: -o-linear-gradient(#F94D4D, #34EFED);
+	background: linear-gradient(#F94D4D, #34EFED);
+}
+
+/* navbar */
+/*.navbar {
+	float: left;
+	margin-left: 15px;
+	/*border: 1px solid red;*/
+	/*margin-top: 35px;
+}
+
+.navbar ul{
+	padding: 25px;
+
+}
+
+.navbar ul li {
+	list-style: none;
+	display: inline;
+	/*border: 1px solid black;*/
+	/*margin: 15px;
+	font-size: 20px;
+}*/
+
+
+/* contact-info */
+.contact-info {
+	float:right;
+	border: 1px solid #696;
+	padding: 39px 0;
+	text-align: center; width: 300px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 -20px 20px 50px;
+	-moz-box-shadow: #666 -20px 20px 50px;
+	box-shadow: #666 -20px 20px 50px;
+	background: #34EFED;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#34EFED), to(#F94D4D));
+	background: -webkit-linear-gradient(#34EFED, #F94D4D);
+	background: -moz-linear-gradient(#34EFED, #F94D4D);
+	background: -ms-linear-gradient(#34EFED, #F94D4D);
+	background: -o-linear-gradient(#34EFED, #F94D4D);
+	background: linear-gradient(#34EFED, #F94D4D);
+}
+
+.contact-info i {
+	font-size: 30px;
+	color: #000;
+}
+
+/*****************************************
+***************** MENU *******************
+*****************************************/
+.menu {
+	background-color: #000;
+}
+
+.menu ul {
+	list-style: none;
+	padding-left: 50px;
+}
+
+.menu ul li {
+	float: left;
+	border-right: 1px solid red;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 20px;
+	display: block;                          /* Very important */
+}
+
+.menu ul li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.menu ul li.active a {
+	background-color: #fff;
+	color: #000; 
+}
+
+.menu ul li:last-child {
+	border-right: none;
+}
+
+/*****************************************
+************** Quick-menu ****************
+*****************************************/
+.quick-menu {
+	background-color: pink;
+}
+
+.quick-menu ul {
+	list-style: none;
+	padding: 15px;
+}
+
+.quick-menu ul li {
+	float: left;
+	border-left: 1px solid red;
+	padding: 10px;
+}
+	
+.quick-menu ul li a {
+	text-decoration: none;
+	display: block;
+	color: #000;
+	padding: 0 15px;
+	border-bottom: 1px solid pink;      /* to stop the disco */
+}
+
+/*The 'last-child' is problemtic and is not browser compatible...........so use first-child instead or make a class.*/
+/*.quick-menu ul li:last-child {
+	border-right: none;
+}*/
+
+.quick-menu ul li:first-child {   /* OR use sir's method of using class......refer reference document of index.html and style.css from Session 12 Ref 5/11/2017*/
+	border-left: none;
+}
+
+.quick-menu ul li a:hover {
+	color: red;
+	border-bottom: 1px solid red;	
+}
+
+/*****************************************
+**************** Banner ******************
+*****************************************/
+.banner {
+	position: relative;
+}
+
+.banner img {
+	width: 1000px;
+	height: 250px;
+}
+
+.banner h2 {
+	padding: 15px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	border: 1px solid red;
+	display: inline-block;
+	background-color: #ccc;
+	z-index: 2;
+	font-size: 25px;
+}
+
+.banner h3 {
+	padding: 15px;
+	position: absolute;
+	top: 100px;
+	left: 310px;
+	background-color: #000;
+	z-index: 1;
+	color: #fff;
+	font-size: 25px;
+}
+
+/*****************************************
+************** Container *****************
+*****************************************/
+.container {
+	width: 970px;      /** I had to this because the border of ccontainer was 30px outside the wrapper's border in rightside. **/
+	/*border: 1px solid green;*/
+	padding:15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid red 50%;
+}
+
+.container hr {
+	width: 80%;
+	border-color: red;
+}
+
+/* Elements inside container */
+
+/************* main-content **************
+*****************************************/
+.main-content {
+	width: 552px;
+	padding: 15px;	
+	/*border:1px solid orange;*/
+	border-right: 1px dashed red;
+	float: left;
+	min-height: 1220px;
+}
+
+.main-content h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed red;
+	padding-bottom: 15px;
+}
+
+.main-content h1:before {
+	content: '';
+	background-image: url(../images/bullet4.png);
+	background-repeat: no-repeat;
+	padding-left: 40px;
+
+}
+
+.main-content p {
+	text-align: justify;    /*not working...when h2 is placed inside the p tag*/
+	margin-bottom: 15px;
+	font-family: Josephin Slab;
+}
+
+.main-content p:first-letter {
+	font-size: 40px;
+	color: red;
+}
+
+.main-content p:first-line {
+	font-size: 20px;
+	color: blue;
+}
+
+.main-content h2 {
+	font-size: 28px;
+	font-weight: bold;
+	color: brown;
+}
+
+.main-content img {
+	float: left;
+	margin-right: 15px;
+	border:2px solid black;
+}
+
+.main-content a.readmore {
+	float: right;
+	margin-bottom: 15px;
+}
+
+.readmore {
+	border: 1px solid #696;
+	padding: 15px 25px;
+	text-align: center; width: 150px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #F8252E;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F8252E), to(#29F5E4));
+	background: -webkit-linear-gradient(#F8252E, #29F5E4);
+	background: -moz-linear-gradient(#F8252E, #29F5E4);
+	background: -ms-linear-gradient(#F8252E, #29F5E4);
+	background: -o-linear-gradient(#F8252E, #29F5E4);
+	background: linear-gradient(#F8252E, #29F5E4);
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}	
+
+.readmore:hover {
+	border: 1px solid #696;
+	padding: 15px 25px;
+	text-align: center; width: 150px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #29F5E4;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#29F5E4), to(#F8252E));
+	background: -webkit-linear-gradient(#29F5E4, #F8252E);
+	background: -moz-linear-gradient(#29F5E4, #F8252E);
+	background: -ms-linear-gradient(#29F5E4, #F8252E);
+	background: -o-linear-gradient(#29F5E4, #F8252E);
+	background: linear-gradient(#29F5E4, #F8252E);	
+}
+
+.main-content h3 {
+	clear: right;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.main-content ul {
+	list-style: none;
+	font-family: arial bold;
+	/*background-color: #eedd82;*/
+	background-color: #00ffff;
+	/*background-color: #03A9C9;*/
+	border: 1px solid brown;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.main-content ul li {
+	background-image: url(../images/bullet3.png);
+    background-repeat: no-repeat;
+    padding-left: 33px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    background-position: 0 -2px;
+} 
+
+
+/************** Sidebar ******************
+*****************************************/
+
+/* Sidebar menu */
+.sidebar-menu {
+
+}
+
+.sidebar {
+	width: 352px;
+	float: left;
+	padding: 15px;
+	/*border: 1px solid red;*/
+}
+
+/* Sidebar components */
+.sidebar h2 {
+	font-size: 28px;
+	border-bottom: 1px dashed red;
+	padding-bottom: 17px;
+	margin-bottom: 15px;
+}
+
+.sidebar h2:after {
+	content: '';
+	background-image: url(../images/bullet4.png);
+	background-repeat: no-repeat;
+	padding-right: 35px;       /* a little confused here as to why the left padding is needed*/
+}
+
+/* Form components */
+
+.form-label {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.textfield {
+	margin-bottom: 15px;
+	outline: none;
+	width: 91%;
+	padding: 15px;
+	background-color: #ccc;
+	border:none;
+}
+
+.textfield::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	color: #009e73;
+}
+.textfield::-moz-placeholder { /* Firefox 19+ */
+  	color: pink;
+}
+.textfield:-ms-input-placeholder { /* IE 10+ */
+  	color: pink;
+}
+.textfield:-moz-placeholder { /* Firefox 18- */
+  	color: pink;
+}
+
+.text-area {
+	outline: none;
+	min-width: 345px;
+	min-height: 300px;
+	background-color: #ccc;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.text-area::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	color: #009e73;
+}
+.text-area::-moz-placeholder { /* Firefox 19+ */
+  	color: pink;
+}
+.text-area:-ms-input-placeholder { /* IE 10+ */
+  	color: pink;
+}
+.text-area:-moz-placeholder { /* Firefox 18- */
+  	color: pink;
+}
+
+/* planet-select */
+.planet-select {
+  	padding: 10px;
+	margin-bottom: 15px;
+  	/*border: 1px solid #ccc;*/
+  	border:none;
+  	width: 93%;
+  	border-radius: 3px;
+  	border-bottom: 1px dashed black;
+  	overflow: hidden;
+  	background-color: #fff;
+
+  	background: #fff url("../images/down_arrow.png") no-repeat 90% 50%;
+}
+
+.planet-select select {
+  	padding: 5px 8px;
+  	width: 100%;
+  	border: none;
+  	box-shadow: none;
+  	background-color: transparent;
+  	background-image: none;
+  	-webkit-appearance: none;
+     	-moz-appearance: none;
+          	appearance: none;
+    color: #009e73;   /*Only this small thing change the font color.....as there is no placeholder the code used to change color for placceholders doesn't work.*/
+}
+
+.planet-select select:focus {
+ 	outline: none;
+}
+
+/* submit button */
+.upload-btn-form {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.btn {
+	border: 2px solid gray;
+	color: #009e73;
+	background-color: #ccc;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.upload-btn-form input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.submission {
+	border: 1px solid #696;
+	padding: 10px 40px;
+	text-align: center; width: 150px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #F8252E;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F8252E), to(#29F5E4));
+	background: -webkit-linear-gradient(#F8252E, #29F5E4);
+	background: -moz-linear-gradient(#F8252E, #29F5E4);
+	background: -ms-linear-gradient(#F8252E, #29F5E4);
+	background: -o-linear-gradient(#F8252E, #29F5E4);
+	background: linear-gradient(#F8252E, #29F5E4);
+	float: right;
+	cursor: pointer;
+}
+
+.submission:hover {
+	border: 1px solid #696;
+	padding: 10px 40px;
+	text-align: center; width: 150px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #29F5E4;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#29F5E4), to(#F8252E));
+	background: -webkit-linear-gradient(#29F5E4, #F8252E);
+	background: -moz-linear-gradient(#29F5E4, #F8252E);
+	background: -ms-linear-gradient(#29F5E4, #F8252E);
+	background: -o-linear-gradient(#29F5E4, #F8252E);
+	background: linear-gradient(#29F5E4, #F8252E);
+}
+/* Cheackboxes and radio buttons 	*/
+.control {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background: #e6e6e6;
+}
+.control--radio .control__indicator {
+  	border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  	background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  	background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  	background: #0e647d;
+}
+.control input:disabled ~ .control__indicator {
+  	background: #e6e6e6;
+  	opacity: 0.6;
+  	pointer-events: none;
+}
+.control__indicator:after {
+  	content: '';
+  	position: absolute;
+  	display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  	display: block;
+}
+.control--checkbox .control__indicator:after {
+  	left: 8px;
+  	top: 4px;
+  	width: 3px;
+  	height: 8px;
+  	border: solid #fff;
+  	border-width: 0 2px 2px 0;
+  	transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  	border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  	left: 7px;
+  	top: 7px;
+  	height: 6px;
+  	width: 6px;
+  	border-radius: 50%;
+  	background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  	background: #7b7b7b;
+}
+
+/*****************************************
+**************** Grid ********************
+*****************************************/
+.grid {
+	margin-bottom: 15px;
+}
+
+.grid h3 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed red;
+}
+
+.gridin {
+	width: 292.6px;
+	border-right: 1px solid red;
+	float: left;
+	padding: 15px;
+	margin: 0 0 15px 5px;
+	padding-right: 20px;
+}
+
+.noborder {
+	border: none;
+}
+
+.gridin h3{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed red;
+}
+ 
+.gridin img {
+	border: 2px dashed black;
+	padding: 5px;
+	background-color: #26C281;
+	/*margin: 15px;*/
+} 
+
+.gridin p {
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+.grid-readmore {
+	border: 1px solid #696;
+	padding: 10px 10px;
+	text-align: center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #58F9F3;
+	/*background: -webkit-gradient(linear, 0 0, 0 bottom, from(#58F9F3), to(#58F9F3));
+	background: -webkit-linear-gradient(#58F9F3, #58F9F3);
+	background: -moz-linear-gradient(#58F9F3, #58F9F3);
+	background: -ms-linear-gradient(#58F9F3, #58F9F3);
+	background: -o-linear-gradient(#58F9F3, #58F9F3);
+	background: linear-gradient(#58F9F3, #58F9F3);*/
+	float: right;
+	text-decoration: none;
+	color: black;
+}
+
+.grid-readmore:hover {
+	border: 1px solid #696;
+	padding: 10px 10px;
+	text-align: center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #000;
+	color: #fff;
+}
+
+/*****************************************
+*************** Footer *******************
+*****************************************/
+.footer {
+	background-color: #ccc;
+	text-align: center;
+	padding: 15px;
+}
