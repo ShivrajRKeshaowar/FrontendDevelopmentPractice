@@ -1,0 +1,341 @@
+/* Creaetd on 19-2-2017, by Shivraj Keshaowar */
+
+/* body */
+body {
+	background-color: #d7dadb;
+	font: 16px/25px calibri;
+	color: #fff;
+}
+
+/* header */
+header {
+	margin-top: 20px;
+}
+
+header .navbar-brand {
+	padding: 0;
+	padding-left: 9px;
+}
+
+.navbar {
+	border-radius: 0;
+}
+.navbar-default {
+	background-color: #2c3e50;
+	border: none;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #fff;
+}
+.navbar-default .navbar-nav li a:hover {
+	background-color: #1c2936;
+	color: #fff;
+}
+.navbar-default .navbar-nav li.active a {
+	background-color: #1c2936;
+	color: #fff;
+}
+
+.navbar-nav li a {
+	line-height: 21px;
+	padding: 13px 22px 16px;
+	/*padding: 20px 21px 16px 22px;*/
+}
+header .navbar-nav ul li a:hover {
+	background-color: #1c2936;
+}
+.searchField {
+	padding: 5px 12px;
+}
+
+.noBorder {
+	border: none;
+}
+.searchButton {
+	background-color: #fa4248;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+/* banner */
+.banner {
+	background-color: #2c3e50;
+	padding: 52px 0px;
+	margin-bottom: 30px;
+}
+
+.banner .container {
+	padding: 0;
+}
+
+.banner h1 {
+	padding-left: 2px;
+}
+
+/* main-content*/
+.main-content .container {
+	padding: 0;
+}
+
+.text {
+	/*background-color: #fff;*/
+	font: 24px/26px calibri;
+	color: #333;
+	padding-top: 17px;
+	padding-left: 21px;
+	padding-bottom: 102px;
+	/*width: 100%;*/
+}
+
+.gridin {
+	background-color: #fff;
+}
+
+.marginBottom {
+	margin-bottom: 42px;
+}
+
+/* footer */
+.footer-top {
+	background-color: #fa4248;
+}
+
+.footer-top img {
+	margin-right: 21px;
+}
+
+.footer-top p {
+	font-size: 20px;
+	line-height: 24px;
+	/*font-weight: bold;*/
+}
+
+.footer-top-left {
+	padding: 31px 0 0 0;
+}
+
+.footer-top-right {
+	padding-top: 42px;
+}
+
+.footer-top-right h2 {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 22px;
+}
+
+.footer-top-right form .textField {
+	background-color: #e03439;
+	color: #ff7b7f;
+}
+
+.textField {
+	border: none;
+}
+.sub-button {
+	background-color: #2c3e50;
+	color: #fff;
+	border:none;
+}
+
+/* footer-mid */
+.footer-mid {
+	background-color: #1f272e;
+}
+.footer-mid ul {
+	list-style: none;
+	padding: 0;
+}
+.noPadding {
+	padding-left: 0;
+}
+.footer-mid h4{
+	/*text-align: center;*//*no need of this*/
+	font-size: 30px;
+	font-weight: bold;
+	margin: 59px 0 34px 0;
+}
+
+/* aboutUs*/
+.aboutUs {
+
+}
+.aboutUs a {
+	text-decoration: none;
+}
+.aboutUs a:hover{
+	color: #fa4248;
+}
+.aboutUs p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.aboutUs p img {
+	margin: 4px 16px 6px 0;
+} 
+.aboutUs .ODesigner {
+	font-size: 17.39px;
+	font-weight: bold;
+}
+/*.foot-img {               I have removed foot-img class from image
+	margin: 4px 16px 6px 0;
+}*/
+/*.footer-mid p {
+	font-size: 14px;
+	line-height: 20px;
+}*/
+
+.nameColor {
+	color: #fa4248;
+	text-decoration: none;
+}
+.ampercentColor {
+	color: #5e5f60;
+	text-decoration: none;
+}
+.linkColor {
+	color: #66cccc;
+	text-decoration: none;
+}
+.footer-mid ul li {
+	font-size: 14px;
+	line-height: 20px;
+	border-top: 1px solid #303d49;
+	padding: 19px 0 17px 0;
+}
+
+.footer-mid ul li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+.customButton {
+	border: none;
+	/*padding: 9px 17px 7px;*/
+	padding: 6px 16px;
+	background-color: #2b3843;
+	color: #0a0c0f;
+	margin:0 5px 5px 0;
+}
+
+/* footer-bottom */
+.footer-bottom {
+	background-color: #191e23;
+	padding: 30px 0 21px;
+}
+
+.footer-bottom ul {
+	list-style: none;
+}
+.footer-bottom ul li {
+	float:left;
+	padding-left:5px;
+}
+.footer-bottom ul li:first-child {
+	padding-left: 0;
+}
+.clear {
+	clear: both;
+}
+/*Use below in media query */
+/*.footer-bottom ul li {
+	display: inline-block;
+	margin-left: 5px;
+	/*margin: 0;
+	padding: 0;/
+}
+.footer-bottom ul li img {
+	/*margin: 0;
+	padding: 0;/
+}
+.footer-bottom ul li:first-child {
+	/*margin-left: 0;/
+}*/
+
+
+
+/**************************************************************************
+* Media Queries
+**************************************************************************/
+
+@media screen and (max-width: 480px) {
+
+	/* gridin */
+	.gridin img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* main-content */
+	.banner .noMargin {
+		margin: 0;
+	}
+
+	/* main-content */
+	.main-content .noMargin {
+		margin: 0;
+	}
+
+	.noPadding {
+		padding-left: 15px;
+	}	
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+	/* gridin */
+	.gridin img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* main-content */
+	.banner .noMargin {
+		margin: 0;
+	}
+
+	/* main-content */
+	.main-content .noMargin {
+		margin: 0;
+	}
+
+	.noPadding {
+		padding-left: 15px;
+	}	
+
+	.footer-top-right {
+		margin-bottom: 15px;
+	}
+}
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px) { }   /*768px for bootstrap 3 and not 769pxlike we use in normally*/
+	
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* navbar */
+	.customNav {
+		padding: 5px;
+	}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+/* navbar */
+
+
+}
+
+/*  992 to 1016 for footer-top */
+@media screen and (min-width: 992px) and (max-width: 1016px) {
+
+
+
+}
