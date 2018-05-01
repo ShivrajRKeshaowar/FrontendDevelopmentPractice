@@ -1,0 +1,206 @@
+/*
+Created by Shivraj Rajendra Keshaowar on 14-11-2017.
+All the contents are used for practice purpose only.And all the respective owners hold their own copyrights for the contents.
+*/
+
+/***********************************************************Reset css***********************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Customized CSS starts from here */
+
+/* Body */
+body {
+	font: 14px/25px 'arial';
+	background-color: #fff;
+	color: #666;
+	border-top: 5px solid #4cb2e5;
+	border-bottom: 8px solid #4cb2e5;
+}
+
+/* clear */
+.clear {
+	clear: both;
+}
+
+/* wrapper */
+.wrapper {
+	width: 901px;
+	margin: 0 auto;
+}
+
+/* header */
+header {
+	padding-top: 46px;
+	margin-bottom: 4px;
+}
+
+/* logo */
+.logo {
+	float: left;
+}
+
+nav {
+	float: right;
+	padding-top:34px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	margin-left: 34px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #333;
+	text-transform: capitalize;
+}
+
+nav ul li.active a {
+	border-bottom: 5px solid #333;
+}
+
+nav ul li a:hover {
+	border-bottom: 5px solid #333;
+}
+
+/* banner */
+.banner {
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	height: 232px;
+	color: #fff;
+	padding: 0 0 5px 0;
+}
+
+.banner h1 {
+	font-size: 49px;
+	text-transform: capitalize;
+	padding: 70px 0 33px 24px;
+	/*padding-top: 70px;
+	padding-bottom: 33px;
+	padding-left: 24px;*/
+}
+
+.banner p {
+	font-size: 20px;
+	padding-left: 27px;
+}
+
+/* grid */
+.grid {
+	border-top: 1px solid #000;
+	padding: 65px 8px 36px 8px;
+}
+
+.gridin {
+	width: 278px;
+	float: left;
+	padding-left: 15px;
+	/*border: 1px solid red;*/
+}
+
+.gridin figure img {
+	border: 1px solid #999;
+	text-align: center;
+	margin-bottom: 46px;	
+}
+
+.gridin h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 9px;
+	margin-bottom: 34px;
+}
+
+.gridin ul {
+	list-style: none;
+	padding-left: 6px;
+}
+
+.gridin ul li {
+	margin-bottom: 28px;
+}
+
+.gridin ul li a {
+	text-decoration: none;
+	color: #666;
+}
+
+.gridin ul li a:hover {
+	color: #0da0e9;
+}
+
+.gridin p {
+	margin: 0 0 20px 8px;
+}
+
+.nopadding {
+	padding-left: none;
+}
+
+.textField {
+	margin: 0 0 27px 10px;
+	padding: 16px 13px;
+	width: 248px;
+	outline: none;
+}
+
+.submitBtn {
+	float: right;
+}
+
+footer {
+	border-top: 1px solid #000;
+	padding: 28px 0 26px 0;
+}
+
+footer p {
+	text-align: center;
+}
