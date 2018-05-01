@@ -1,0 +1,380 @@
+/*
+Created by Shivraj Rajendra Keshaowar on 18-11-2017 and 19th.
+All the contents are used for practice purpose only.And all the respective owners hold their own copyrights for the contents.
+*/
+
+/***********************************************************Reset css***********************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Customized CSS starts from here */
+
+/* Body */
+body {
+	font: 14px/25px 'arial';
+	background-color: #fff;
+	color: #666;
+	border-top: 5px solid #4cb2e5;
+	border-bottom: 8px solid #4cb2e5;
+}
+
+/* clear */
+.clear {
+	clear: both;
+}
+
+/* wrapper */
+.wrapper {
+	width: 901px;
+	margin: 0 auto;
+}
+
+/* header */
+header {
+	padding-top: 46px;
+	margin-bottom: 4px;
+}
+
+/* logo */
+.logo {
+	float: left;
+	height: auto;
+}
+
+.logo img {
+	width: 100%;
+}
+
+nav {
+	float: right;
+	padding-top:34px;
+}
+
+/*nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	margin-left: 34px;
+}
+*/
+
+nav ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+nav ul li.active a {
+	border-bottom: 5px solid #333;
+}
+
+/*nav ul li a:hover {
+	border-bottom: 5px solid #333;
+}*/
+
+/* banner */
+.banner {
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 232px;
+	color: #fff;
+	padding: 0 0 5px 0;
+}
+
+.banner h1 {
+	font-size: 49px;
+	text-transform: capitalize;
+	padding: 70px 0 33px 24px;
+	/*padding-top: 70px;
+	padding-bottom: 33px;
+	padding-left: 24px;*/
+
+	text-shadow: 	rgb(153, 153, 153) 2px 0px 0px, rgb(153, 153, 153) 1.75517px 0.958851px 0px, 
+					rgb(153, 153, 153) 1.0806px 1.68294px 0px, rgb(153, 153, 153) 0.141474px 1.99499px 0px, 
+					rgb(153, 153, 153) -0.832294px 1.81859px 0px, rgb(153, 153, 153) -1.60229px 1.19694px 0px,
+	 				rgb(153, 153, 153) -1.97998px 0.28224px 0px, rgb(153, 153, 153) -1.87291px -0.701566px 0px, 
+	 				rgb(153, 153, 153) -1.30729px -1.5136px 0px, rgb(153, 153, 153) -0.421592px -1.95506px 0px, 
+					rgb(153, 153, 153) 0.567324px -1.91785px 0px, rgb(153, 153, 153) 1.41734px -1.41108px 0px,
+	 				rgb(153, 153, 153) 1.92034px -0.558831px 0px;
+}
+
+.banner p {
+	font-size: 20px;
+	padding-left: 27px;
+}
+
+/* grid */
+.grid {
+	border-top: 1px solid #000;
+	/*padding: 65px 8px 36px 8px;*/
+	padding: 65px 8px 36px 20px;
+}
+
+.gridin {
+	width: 278px;
+	float: left;
+	/*padding-left: 15px;*/
+	margin-right: 15px;
+	/*border: 1px solid red;*/
+}
+
+.gridin figure img {
+	border: 1px solid #999;
+	text-align: center;
+	margin-bottom: 46px;
+	width: 100%;
+	height: auto;	
+}
+
+.gridin h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 9px;
+	margin-bottom: 34px;
+}
+
+.gridin ul {
+	list-style: none;
+	padding-left: 6px;
+}
+
+.gridin ul li {
+	margin-bottom: 28px;
+}
+
+.gridin ul li a {
+	text-decoration: none;
+	color: #666;
+}
+
+.gridin ul li a:hover {
+	color: #0da0e9;
+}
+
+.gridin p {
+	margin: 0 0 20px 8px;
+}
+
+/*.nopadding {
+	padding-left: none;
+}*/
+.nomargin {
+	margin-right: 0;
+}
+
+.textField {
+	margin: 0 0 27px 10px;
+	padding: 16px 13px;
+	/*width: 248px;*/
+	width: 88%;
+	outline: none;
+	background-color: #ecebeb;
+	color: red;
+	border: none;
+	box-shadow: inset 15px 12px 20px -9px #ABABAB;
+	-webkit-box-shadow: inset 15px 12px 20px -9px #ABABAB;
+	-moz-box-shadow: inset 15px 12px 20px -9px #ABABAB;
+	-o-box-shadow: inset 15px 12px 20px -9px #ABABAB;
+}
+
+.textField::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: red;
+}
+.textField::-moz-placeholder { /* Firefox 19+ */
+  color: red;
+}
+.textField:-ms-input-placeholder { /* IE 10+ */
+  color: red;
+}
+.textField:-moz-placeholder { /* Firefox 18- */
+  color: red;
+}
+
+.submitBtn {
+	float: right;
+	border: 1px solid #92a6ca;
+	border-radius: 3px;
+	padding: 10px 15px; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd5fb+0,99b1da+100 */
+	background: #bfd5fb; /* Old browsers */
+	background: -moz-linear-gradient(top, #bfd5fb 0%, #99b1da 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #bfd5fb 0%,#99b1da 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #bfd5fb 0%,#99b1da 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd5fb', endColorstr='#99b1da',GradientType=0 ); /* IE6-9 */
+}
+
+footer {
+	border-top: 1px solid #000;
+	padding: 28px 0 26px 0;
+}
+
+footer p {
+	text-align: center;
+}
+
+
+
+/* Media query */
+
+@media screen and (max-width: 320px) {
+	/* wrapper */
+	.wrapper {
+		width: auto;
+		margin: 0;
+	}
+
+	.nav ul li a:hover {
+		background-color: #248abd;
+	}
+
+	/* banner */
+	.banner {
+		background-position: right;
+	}
+	.banner h1 {
+		font-size: 28px;
+	}
+	.banner p {
+		font-size: 18px;
+	}
+	.banner br {
+		display: none;
+	}
+
+	.gridin {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+
+	.textField {
+		width: 88%;
+	}
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+	/* wrapper */
+	.wrapper {
+		width: auto;
+		margin: 0;
+	}
+	/* banner */
+	.banner {
+		background-position: right;
+	}
+	.banner h1 {	
+		font-size: 30px;
+	}
+	.banner p {
+		font-size: 19px;
+	}
+	.banner br {
+		display: none;
+	}
+
+	.gridin {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {/* wrapper */
+	.wrapper {
+		width: auto;
+		margin: 0;
+	}
+
+	.nav ul li a:hover {
+		background-color: #248abd;
+	}
+
+	/* banner*/
+	.banner {
+		background-position: right;
+	}
+	.banner h1 {
+		font-size: 49px;
+	}
+	.banner p {
+		font-size: 20px;
+	}
+	.banner br {
+		display: none;
+	}
+
+	.gridin {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	/* wrapper */
+	.wrapper {
+		width: auto;
+		margin: 0;
+	}
+
+	.gridin {
+		width: 30.85%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
